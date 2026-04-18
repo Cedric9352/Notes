@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "Cedric9352.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "**/README.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
