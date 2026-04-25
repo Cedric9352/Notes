@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "Cedric9352.github.io",
+    baseUrl: "cedric9352.github.io/Notes",
     ignorePatterns: ["private", "templates", ".obsidian", "**/README.md"],
     defaultDateType: "modified",
     theme: {
