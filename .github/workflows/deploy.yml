@@ -15,7 +15,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       
       # 拉取笔记仓库
       - name: Sync Content
@@ -24,12 +24,12 @@ jobs:
           git clone --depth 1 https://${{ secrets.PAT_TOKEN }}@github.com/Cedric9352/CFA-Notes.git content/CFA-Notes
           rm -rf content/CFA-Notes/.git
       
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 24
       - run: npm ci
       - run: npx quartz build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
